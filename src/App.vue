@@ -2,7 +2,7 @@
   <div id="app">
       <div id="wrapper">
           <b-container>
-              <h1>Адвент-календарь 2023</h1>
+              <h1>{{gifts.title}}</h1>
               <div class="parent">
                   <b-button v-for="day in daysInMonth(currentMonth,currentFullYear)" class="days"
                             :key="day" @click="showModal(day)" :disabled="isDisabled(day)">
@@ -11,7 +11,7 @@
                   </b-button>
               </div>
               <b-modal ref="my-modal" size="lg">
-                  <h3>Три желания на выбор:</h3>
+                  <h3>{{gifts.nameList}}</h3>
                   <b-row v-for="i in maxGifts">
                       <b-col cols="1">
                           <div class="text">{{i}}</div>
