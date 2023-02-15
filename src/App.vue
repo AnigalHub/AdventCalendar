@@ -105,7 +105,7 @@ export default {
         100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
     }
     #app {
-        min-height: 90vh;
+        min-height: 100vh;
         height: auto;
         margin: 0 !important;
         padding: 0 !important;
