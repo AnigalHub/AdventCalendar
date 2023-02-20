@@ -95,6 +95,9 @@ export default {
 </script>
 
 <style lang="scss">
+    body{
+       background-color: black !important;
+    }
     #wrapper {
         background-image: url('./../public/snowflake.png'), url('./../public/snowflake2.png'), url('./../public/snowflake3.png');
         height:100%;
