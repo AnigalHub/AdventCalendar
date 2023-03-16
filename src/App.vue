@@ -128,8 +128,16 @@ export default {
         text-align: center;
         font-family: 'EB Garamond', serif;
     }
+    h3{
+        padding: 1% 0;
+        cursor: default;
+    }
     .row{
-        padding-bottom: 1%;
+        padding-bottom: 1.25%;
+        cursor: default;
+        &:hover .col-1 div{
+            transform: scale(1.05);
+        }
         .col-1 div{
             min-width: 25px;
             width: 90%;
@@ -374,9 +382,6 @@ export default {
         }
     }
     @media screen  and (max-width: 400px) {
-        h1{
-
-        }
         .modal.show .modal-dialog {
             margin-top: 35% !important;
         }
@@ -403,12 +408,8 @@ export default {
         }
     }
     @media screen  and (max-width: 300px) {
-        .parent{
-            .days {
-                .month {
-                    display: none;
-                }
-            }
+        .parent .days .month {
+            display: none;
         }
         .text,.close{
             font-size: .8rem;
